@@ -42,6 +42,18 @@ npm run dev
 | Azul fondo | `#c7dae7` |
 | Azul acento | `#045b96` |
 
+## Contribución
+
+¡Las contribuciones son bienvenidas! Para contribuir:
+
+1. Haz fork del repositorio
+2. Crea una rama: `git checkout -b feat/mi-mejora`
+3. Realiza tus cambios y haz commit: `git commit -m "feat: descripción de la mejora"`
+4. Push a tu fork: `git push origin feat/mi-mejora`
+5. Abre un Pull Request describiendo los cambios
+
+Por favor sigue las convenciones de commits ([Conventional Commits](https://www.conventionalcommits.org/)) y asegúrate de que el código pase las pruebas antes de enviar el PR.
+
 ## Licencia
 
 MIT

@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #c7dae7;
+    color: #012b5c;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #c7dae7;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #5f92ae;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-brand-light/40;
+  }
+  .btn-primary {
+    @apply bg-brand-accent hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-ghost {
+    @apply text-brand-dark hover:bg-brand-light/50 font-medium px-4 py-2 rounded-xl transition-all duration-200;
+  }
+  .input {
+    @apply w-full bg-white border border-brand-light rounded-xl px-4 py-3 text-brand-dark placeholder-brand-soft/60 focus:outline-none focus:ring-2 focus:ring-brand-accent/30 focus:border-brand-accent transition-all duration-200;
+  }
+  .badge-live {
+    @apply inline-flex items-center gap-1 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full;
+  }
+  .nav-icon {
+    @apply p-2 rounded-xl text-white/80 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer;
+  }
+}

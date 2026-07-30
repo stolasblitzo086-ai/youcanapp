@@ -85,7 +85,6 @@ function TutoriaRoom({ tutoria, onLeave }: { tutoria: Tutoria; onLeave: () => vo
 }
 
 function RequestForm({ onClose }: { onClose: () => void }) {
-  const [step, setStep] = useState(1)
   const [form, setForm] = useState({ subject: '', topic: '', doubt: '', level: '' })
   const [matching, setMatching] = useState(false)
   const [matched, setMatched] = useState(false)

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Edit2, Mail, CreditCard, BookOpen, Clock, Star, TrendingUp } from 'lucide-react'
 import { useApp } from '../context/AppContext'
-import Avatar from '../components/Avatar'
+
 
 export default function Perfil() {
   const { user } = useApp()

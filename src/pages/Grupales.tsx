@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Search, Users, DollarSign, BookOpen, Mic, MicOff, Camera, CameraOff, MessageSquare, Monitor, PhoneOff, Send, X } from 'lucide-react'
+import { Search, Users, DollarSign, BookOpen, Mic, MicOff, Camera, CameraOff, MessageSquare, Monitor, PhoneOff, Send } from 'lucide-react'
 import Avatar from '../components/Avatar'
 
 const groups = [
